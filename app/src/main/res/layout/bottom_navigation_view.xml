@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".views.MainActivity">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@color/ColorIcons"
+        app:itemTextColor="@color/ColorIcons"
+        app:menu="@xml/menu_bottom"/>
+
+</RelativeLayout>
+
+<!--<com.roughike.bottombar.BottomBar-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/bottombar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="70dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_gravity="bottom|end"-->
+    <!--app:bb_inActiveTabColor="@android:color/white"-->
+    <!--app:bb_activeTabColor="@android:color/white"-->
+    <!--app:bb_tabXmlResource="@xml/bottombar_tabs"-->
+    <!--/>-->
+
+

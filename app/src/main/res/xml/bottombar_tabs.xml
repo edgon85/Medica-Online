@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tabs>
+    <tab
+        id="@+id/tab_fragment1"
+        title="1"
+        barColorWhenSelected="@color/colorPrimary"
+        icon="@mipmap/ic_launcher"
+        />
+    <tab
+        id="@+id/tab_home"
+        title="Home"
+        barColorWhenSelected="@color/colorPrimary"
+        icon="@mipmap/ic_launcher"
+        />
+    <tab
+        id="@+id/tab_fragment3"
+        title="3"
+        barColorWhenSelected="@color/colorPrimary"
+        icon="@mipmap/ic_launcher"
+        />
+
+</tabs>
