@@ -7,8 +7,10 @@ package com.edgon.medicahospitalaria.constants;
 public class Constants {
 
     //Pacientes   https://medicaonline.herokuapp.com/paciente/
-    public static final String URL = "https://medicaonline.herokuapp.com";
-    public static final String URI = "/paciente/";
+    public static final String URL_BASE = "https://medicaonline.herokuapp.com";
+    public static final String URI_PATIENT = "/paciente/";
+
+    public static final String URI_MEDIC = "/medico/";
 
 
 }

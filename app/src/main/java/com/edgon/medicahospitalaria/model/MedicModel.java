@@ -1,18 +1,9 @@
 package com.edgon.medicahospitalaria.model;
 
-
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class PatientModel {
-
-
-    @SerializedName("id")
-    @Expose
-    private int id;
-
-
-
+public class MedicModel {
     @SerializedName("name")
     @Expose
     private String name;
@@ -21,19 +12,16 @@ public class PatientModel {
     private String lastName;
     @SerializedName("gender")
     @Expose
-    private Object gender;
+    private String gender;
     @SerializedName("age")
     @Expose
-    private Object age;
+    private int age;
+    @SerializedName("professional_id")
+    @Expose
+    private String professionalId;
     @SerializedName("phone")
     @Expose
     private String phone;
-    @SerializedName("adress")
-    @Expose
-    private String adress;
-    @SerializedName("postal_code")
-    @Expose
-    private Object postalCode;
     @SerializedName("email")
     @Expose
     private String email;
@@ -57,20 +45,28 @@ public class PatientModel {
         this.lastName = lastName;
     }
 
-    public Object getGender() {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(Object gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
-    public Object getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(Object age) {
+    public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getProfessionalId() {
+        return professionalId;
+    }
+
+    public void setProfessionalId(String professionalId) {
+        this.professionalId = professionalId;
     }
 
     public String getPhone() {
@@ -79,22 +75,6 @@ public class PatientModel {
 
     public void setPhone(String phone) {
         this.phone = phone;
-    }
-
-    public String getAdress() {
-        return adress;
-    }
-
-    public void setAdress(String adress) {
-        this.adress = adress;
-    }
-
-    public Object getPostalCode() {
-        return postalCode;
-    }
-
-    public void setPostalCode(Object postalCode) {
-        this.postalCode = postalCode;
     }
 
     public String getEmail() {
@@ -112,25 +92,16 @@ public class PatientModel {
     public void setPassword(String password) {
         this.password = password;
     }
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     @Override
     public String toString() {
-        return "PatientModel{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
+        return "MedicModel{" +
+                "name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", gender=" + gender +
                 ", age=" + age +
+                ", professionalId='" + professionalId + '\'' +
                 ", phone='" + phone + '\'' +
-                ", adress='" + adress + '\'' +
-                ", postalCode=" + postalCode +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 '}';

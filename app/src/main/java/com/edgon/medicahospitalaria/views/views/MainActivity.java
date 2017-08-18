@@ -1,4 +1,4 @@
-package com.edgon.medicahospitalaria.views;
+package com.edgon.medicahospitalaria.views.views;
 
 import android.os.Bundle;
 import android.support.annotation.IdRes;
@@ -14,7 +14,7 @@ import android.view.MenuItem;
 import com.edgon.medicahospitalaria.R;
 import com.edgon.medicahospitalaria.views.fragments.HistoryFragment;
 import com.edgon.medicahospitalaria.views.fragments.ListFragment;
-import com.edgon.medicahospitalaria.views.fragments.ProfileFragment;
+import com.edgon.medicahospitalaria.views.fragments.ProfileContentFragment;
 import com.edgon.medicahospitalaria.views.fragments.SearchFragment;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabSelectListener;
@@ -84,9 +84,9 @@ public class MainActivity extends AppCompatActivity {
                                 .commit();
                         break;
                     case R.id.tab_profile:
-                        ProfileFragment profileFragment = new ProfileFragment();
+                        ProfileContentFragment profileContentFragment = new ProfileContentFragment();
                         getSupportFragmentManager().beginTransaction()
-                                .replace(R.id.container,profileFragment)
+                                .replace(R.id.container,profileContentFragment)
                                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                                 .addToBackStack(null)
                                 .commit();

@@ -12,7 +12,7 @@ public class ServiceGenerator {
     private static Retrofit.Builder builder =
             new Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())
-            .baseUrl(Constants.URL);
+            .baseUrl(Constants.URL_BASE);
 
     public static ServicesInterface createService(){
         if (retrofit == null) {

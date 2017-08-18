@@ -3,6 +3,8 @@
           xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
     <application
         android:allowBackup="true"
@@ -11,7 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".views.MainActivity">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDZU8B0tixNZBsKYe2vMYg82CSB94LdXwg"/>
+
+        <activity android:name=".views.views.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -26,6 +33,12 @@
         <activity android:name=".login.LoginActivity">
         </activity>
         <activity android:name=".login.patient.CreateAcountActivity">
+        </activity>
+        <activity
+            android:name=".views.views.ListMedic"
+            android:parentActivityName=".views.views.MainActivity">
+        </activity>
+        <activity android:name=".views.views.DetailMedic">
         </activity>
     </application>
 

@@ -1,11 +1,11 @@
 <resources>
-    <string name="app_name">Medica Hospitalaria</string>
+    <string name="app_name">Medica Online</string>
     <string name="title_activity_refence">RefenceActivity</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="tab1">Buscar</string>
-    <string name="tab2">Listar</string>
+    <string name="tab2">Citas</string>
     <string name="tab3">Historial</string>
     <string name="tab4">Yo</string>
     <string name="General">Médico General</string>
@@ -20,4 +20,11 @@
     <string name="hint_username">Usuario</string>
     <string name="hint_password">Contraseña</string>
     <string name="text_button_login">Inicio</string>
+
+
+    <string-array name="spinner_item">
+        <item>Paciente</item>
+        <item>Médico</item>
+    </string-array>
+
 </resources>

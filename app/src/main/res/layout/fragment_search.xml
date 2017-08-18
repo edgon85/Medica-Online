@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="70dp"
     tools:context="com.edgon.medicahospitalaria.views.fragments.SearchFragment">
 
     <include
@@ -14,6 +16,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbare"/>
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_below="@id/search_view"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        map:uiZoomControls="true"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,17 +39,22 @@
             >
 
             <Button
+                android:id="@+id/btn_medico"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:text="@string/General"
+                android:textSize="12sp"
                 />
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:text="@string/Pediatra"
+                android:textSize="12sp"
                 />
 
             <Button
@@ -47,6 +62,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/oftalmologo"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:textSize="12sp"
                 />
         </LinearLayout>
 
@@ -61,6 +78,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/Ginecologo"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:textSize="12sp"
                 />
 
             <Button
@@ -68,13 +87,16 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/Dematologo"
-                />
+                android:textSize="12sp"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/destista"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:textSize="12sp"
                 />
         </LinearLayout>
 
@@ -90,6 +112,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/enfermeria"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:textSize="12sp"
                 />
 
             <Button
@@ -97,13 +121,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/Hospitales"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:textSize="12sp"
                 />
-
             <Button
+                android:id="@+id/button"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:text="@string/Emergencia"
+                android:textSize="12sp"
                 />
         </LinearLayout>
 
